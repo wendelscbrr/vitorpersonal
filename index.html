@@ -3,160 +3,1381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Trainer em Brasília - DF | Vitor L.</title>
-  <meta name="description" content="Personal trainer em Brasília para emagrecimento, hipertrofia e condicionamento físico. Treinos personalizados presenciais e online. Agende sua aula!">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; media-src 'self'; frame-src https://player.vimeo.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Personal Trainer em Brasília (DF) | Vitor L. Personal</title>
+  <meta name="description" content="Personal trainer em Brasília para emagrecimento, hipertrofia e condicionamento físico. Aulas presenciais no DF e consultoria online. Agende sua avaliação.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://vitorpersonal.com/">
-  
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Preload dos recursos críticos (imagem do topo e fonte) -->
+  <link rel="preload" as="image" type="image/webp"
+        href="img/hero-personal-trainer-brasilia-720.webp"
+        imagesrcset="img/hero-personal-trainer-brasilia-720.webp 720w, img/hero-personal-trainer-brasilia-860.webp 860w, img/hero-personal-trainer-brasilia-1080.webp 1080w"
+        imagesizes="(min-width: 900px) 55vw, 100vw" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin>
+
+  <!-- Ícones -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://vitorpersonal.com/">
   <meta property="og:site_name" content="Vitor L. Personal Trainer">
-  <meta property="og:title" content="Personal Trainer em Brasília - DF | Vitor L.">
-  <meta property="og:description" content="Personal trainer em Brasília para emagrecimento, hipertrofia e condicionamento físico. Treinos personalizados presenciais e online. Agende sua aula!">
-  <meta property="og:image" content="https://vitorpersonal.com/image/perfil.jpg">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="750">
-  <meta property="og:image:alt" content="Vitor L. Personal Trainer em Brasília">
+  <meta property="og:title" content="Personal Trainer em Brasília (DF) | Vitor L. Personal">
+  <meta property="og:description" content="Treinamento personalizado em Brasília para emagrecimento, hipertrofia e condicionamento físico. Presencial no DF e consultoria online.">
+  <meta property="og:image" content="https://vitorpersonal.com/img/og-vitor-personal-trainer-brasilia.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vitor L., personal trainer em Brasília, treinando no estádio">
 
-  <!-- Twitter Card -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Personal Trainer em Brasília - DF | Vitor L.">
-  <meta name="twitter:description" content="Personal trainer em Brasília para emagrecimento, hipertrofia e condicionamento físico. Treinos personalizados presenciais e online. Agende sua aula!">
-  <meta name="twitter:image" content="https://vitorpersonal.com/image/perfil.jpg">
-  <meta name="twitter:image:alt" content="Vitor L. Personal Trainer em Brasília">
+  <meta name="twitter:title" content="Personal Trainer em Brasília (DF) | Vitor L. Personal">
+  <meta name="twitter:description" content="Treinamento personalizado em Brasília para emagrecimento, hipertrofia e condicionamento físico. Presencial no DF e consultoria online.">
+  <meta name="twitter:image" content="https://vitorpersonal.com/img/og-vitor-personal-trainer-brasilia.jpg">
+  <meta name="twitter:image:alt" content="Vitor L., personal trainer em Brasília, treinando no estádio">
 
-  <!-- Dados Estruturados / Schema.org JSON-LD -->
+  <!-- Dados estruturados (Schema.org) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "@id": "https://vitorpersonal.com/#business",
-    "name": "Vitor L. Personal Trainer",
-    "image": "https://vitorpersonal.com/image/perfil.jpg",
-    "url": "https://vitorpersonal.com/",
-    "telephone": "+55-61-98551-1063",
-    "email": "contato@vitorpersonal.com",
-    "description": "Treinamento personalizado presencial em Brasília e consultoria online para emagrecimento, hipertrofia e condicionamento físico.",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Brasília",
-      "addressRegion": "DF",
-      "addressCountry": "BR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -15.7942,
-      "longitude": -47.8822
-    },
-    "areaServed": [
+    "@graph": [
       {
-        "@type": "City",
-        "name": "Brasília"
+        "@type": "WebSite",
+        "@id": "https://vitorpersonal.com/#website",
+        "url": "https://vitorpersonal.com/",
+        "name": "Vitor L. Personal Trainer",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://vitorpersonal.com/#business" }
       },
       {
-        "@type": "AdministrativeArea",
-        "name": "Distrito Federal"
-      }
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "06:00",
-        "closes": "21:00"
+        "@type": "WebPage",
+        "@id": "https://vitorpersonal.com/#webpage",
+        "url": "https://vitorpersonal.com/",
+        "name": "Personal Trainer em Brasília (DF) | Vitor L. Personal",
+        "description": "Personal trainer em Brasília para emagrecimento, hipertrofia e condicionamento físico. Aulas presenciais no DF e consultoria online.",
+        "inLanguage": "pt-BR",
+        "isPartOf": { "@id": "https://vitorpersonal.com/#website" },
+        "about": { "@id": "https://vitorpersonal.com/#business" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://vitorpersonal.com/img/og-vitor-personal-trainer-brasilia.jpg",
+          "width": 1200,
+          "height": 630
+        }
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
+        "@type": "Person",
+        "@id": "https://vitorpersonal.com/#vitor",
+        "name": "Vitor Luciano",
+        "alternateName": "Vitor L.",
+        "jobTitle": "Personal Trainer",
+        "image": "https://vitorpersonal.com/img/vitor-personal-trainer-brasilia-800.webp",
+        "url": "https://vitorpersonal.com/",
+        "sameAs": ["https://www.instagram.com/vitor.lpersonal"],
+        "worksFor": { "@id": "https://vitorpersonal.com/#business" },
+        "knowsAbout": ["Treinamento personalizado", "Emagrecimento", "Hipertrofia", "Condicionamento físico", "Treinamento de força", "Consultoria online de treino"]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://vitorpersonal.com/#business",
+        "name": "Vitor L. Personal Trainer",
+        "description": "Personal trainer em Brasília (DF): treinamento personalizado presencial e consultoria online para emagrecimento, hipertrofia e condicionamento físico.",
+        "url": "https://vitorpersonal.com/",
+        "image": "https://vitorpersonal.com/img/og-vitor-personal-trainer-brasilia.jpg",
+        "logo": "https://vitorpersonal.com/icons/icon-512.png",
+        "telephone": "+55-61-98551-1063",
+        "priceRange": "$$",
+        "founder": { "@id": "https://vitorpersonal.com/#vitor" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brasília",
+          "addressRegion": "DF",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Brasília" },
+          { "@type": "AdministrativeArea", "name": "Distrito Federal" }
         ],
-        "opens": "07:00",
-        "closes": "13:00"
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "06:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "07:00",
+            "closes": "13:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de personal trainer",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal trainer presencial em Brasília" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria online de treino" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Treino para emagrecimento" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Treino de hipertrofia" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Condicionamento físico" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Treino para iniciantes" } }
+          ]
+        },
+        "sameAs": ["https://www.instagram.com/vitor.lpersonal"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vitorpersonal.com/#faq",
+        "isPartOf": { "@id": "https://vitorpersonal.com/#webpage" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto custa um personal trainer em Brasília?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O investimento varia conforme a frequência semanal de treinos, o local e a modalidade (presencial ou consultoria online). Chame no WhatsApp para receber os valores atualizados e escolher o plano que cabe na sua rotina." }
+          },
+          {
+            "@type": "Question",
+            "name": "O atendimento é presencial ou online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Os dois. O treinamento presencial é feito em Brasília (DF) e a consultoria online atende alunos de qualquer cidade, com treino personalizado e acompanhamento a distância." }
+          },
+          {
+            "@type": "Question",
+            "name": "Personal trainer ajuda a emagrecer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. O treino é planejado para aumentar o gasto calórico, preservar a massa muscular e manter a constância, fatores decisivos para emagrecer com saúde. O resultado também depende de alimentação, sono e regularidade." }
+          },
+          {
+            "@type": "Question",
+            "name": "Nunca treinei. Posso começar com personal trainer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pode, e é a forma mais segura de começar. A avaliação inicial identifica seu nível, suas limitações e seu objetivo, e o treino evolui de forma progressiva, com correção de execução em cada exercício." }
+          },
+          {
+            "@type": "Question",
+            "name": "Em quanto tempo aparecem os resultados?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Depende do objetivo, do ponto de partida e da frequência de treinos. Os alunos mostrados nas transformações tiveram evolução visível entre 3 e 6 meses de acompanhamento." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como agendar a primeira aula?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Clique em Agendar aula ou no botão do WhatsApp, conte seu objetivo e sua disponibilidade de horários. Em seguida, marcamos a avaliação inicial." }
+          }
+        ]
       }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/vitor.lpersonal",
-      "https://wa.me/5561985511063"
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+  <!-- CSS crítico embutido: evita requisições que bloqueiam a renderização -->
+  <style>
+    /* ========================================
+       VITOR L. PERSONAL
+       Dark premium gym landing page
+       ======================================== */
+
+    /* ---------- Fonte (Inter, hospedada localmente) ---------- */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: optional;
+      src: url('fonts/inter-latin.woff2') format('woff2');
+    }
+
+    /* Fallback com métricas ajustadas para evitar "pulo" de layout quando a Inter carrega */
+    @font-face {
+      font-family: 'Inter Fallback';
+      src: local('Arial');
+      size-adjust: 107.4%;
+      ascent-override: 90.2%;
+      descent-override: 22.48%;
+      line-gap-override: 0%;
+    }
+
+    /* ---------- Reset & Base ---------- */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #111111;
+      --bg-card: #161616;
+      --bg-card-hover: #1c1c1c;
+      --text-primary: #ffffff;
+      --text-secondary: #a8a8a8;
+      --text-muted: #8f8f8f;
+      --accent: #00b4ff;
+      --accent-hover: #33c4ff;
+      --accent-soft: #2b84ad;
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      --transition: 0.25s ease;
+      --font: 'Inter', 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --container: 1140px;
+      --header-h: 64px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-h) + 16px);
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    img {
+      background: var(--bg-card);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .icon-sprite {
+      display: none;
+    }
+
+    /* ---------- Utilities ---------- */
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .text-accent {
+      color: var(--accent);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -100px;
+      z-index: 200;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-title--center {
+      text-align: center;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto 48px;
+    }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+      text-align: center;
+      border-radius: 50px;
+      transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+
+    .btn svg {
+      flex-shrink: 0;
+    }
+
+    .btn--primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .btn--primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 180, 255, 0.35);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn--outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0, 180, 255, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .btn--lg {
+      padding: 18px 36px;
+      font-size: 1.05rem;
+    }
+
+    /* ---------- Header ---------- */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo__text {
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .logo__text strong {
+      font-weight: 800;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav__link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      transition: color var(--transition);
+    }
+
+    .nav__link:hover {
+      color: var(--accent);
+    }
+
+    .header__instagram {
+      color: var(--text-secondary);
+      transition: color var(--transition), transform var(--transition);
+      display: flex;
+      align-items: center;
+      padding: 8px;
+    }
+
+    .header__instagram:hover {
+      color: var(--accent);
+      transform: scale(1.1);
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--header-h) + 56px) 0 80px;
+      overflow: hidden;
+      background: var(--bg-primary);
+    }
+
+    .hero__media {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 55%;
+      z-index: 0;
+    }
+
+    .hero__img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 25%;
+    }
+
+    /* Vídeo do Vimeo: ocupa o topo inteiro e só aparece quando começa a tocar (js/main.js) */
+    .hero__video {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .hero__video.is-playing {
+      opacity: 1;
+    }
+
+    /* Simula object-fit: cover para o iframe (vídeo em 1700x1080 ≈ 1.574:1).
+       A altura do topo é próxima da altura da tela, então usamos vw/svh. */
+    .hero__video iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: max(100vw, 165svh);
+      height: max(64vw, 105svh);
+      transform: translate(-50%, -50%);
+      border: 0;
+    }
+
+    .hero__video::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.7) 45%, rgba(10, 10, 10, 0.35) 100%),
+        linear-gradient(0deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0) 25%);
+    }
+
+    .hero__media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0.75) 30%, rgba(10, 10, 10, 0.1) 70%),
+        linear-gradient(0deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0) 30%);
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero__text {
+      max-width: 660px;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(6, 22, 32, 0.85);
+      border: 1px solid rgba(0, 180, 255, 0.35);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1.3;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+    }
+
+    .hero__title {
+      font-size: clamp(2.1rem, 4.2vw, 3.25rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: #c4c4c4;
+      max-width: 560px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    /* ---------- About ---------- */
+    .about {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .about__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about__image-wrap {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .about__image {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .about__image-wrap:hover .about__image {
+      transform: scale(1.03);
+    }
+
+    .about__content {
+      max-width: 540px;
+    }
+
+    .about__text {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .about__text:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    .about__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 20px 16px;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+
+    .info-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(0, 180, 255, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .info-card h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ---------- Services ---------- */
+    .services {
+      padding: 100px 0;
+      background: var(--bg-primary);
+    }
+
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+
+    .service-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(0, 180, 255, 0.25);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .service-card__icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 180, 255, 0.1);
+      border-radius: 50%;
+      color: var(--accent);
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .service-card:hover .service-card__icon {
+      background: rgba(0, 180, 255, 0.2);
+      transform: scale(1.08);
+    }
+
+    .service-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* ---------- How it Works ---------- */
+    .how-it-works {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+      list-style: none;
+    }
+
+    .step {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .step:hover {
+      border-color: rgba(0, 180, 255, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .step__number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--accent-soft);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .step__icon {
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .step h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ---------- Results ---------- */
+    .results {
+      padding: 100px 0;
+      background: var(--bg-primary);
+    }
+
+    .results__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .result-card {
+      transition: transform var(--transition);
+    }
+
+    .result-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .result-card__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+
+    .result-card__photo {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .result-card__photo img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .result-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+    .label--after {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .result-card__caption {
+      text-align: center;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- Testimonials ---------- */
+    .testimonials {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(0, 180, 255, 0.25);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimonial-card__stars {
+      color: #ffc107;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-card blockquote {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .testimonial-card__author {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .testimonial-card__author strong {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .testimonial-card__author span {
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+      padding: 100px 0;
+      background: var(--bg-primary);
+    }
+
+    .faq__list {
+      max-width: 780px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq__item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      transition: border-color var(--transition);
+    }
+
+    .faq__item[open] {
+      border-color: rgba(0, 180, 255, 0.3);
+    }
+
+    .faq__item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 22px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .faq__item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq__item summary::after {
+      content: '+';
+      flex-shrink: 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1;
+      color: var(--accent);
+      transition: transform var(--transition);
+    }
+
+    .faq__item[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq__item p {
+      padding: 0 22px 22px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ---------- Instagram ---------- */
+    .instagram {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .instagram__handle {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+    }
+
+    .instagram__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .instagram__item {
+      position: relative;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      aspect-ratio: 1;
+      display: block;
+    }
+
+    .instagram__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .instagram__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .instagram__item:hover img,
+    .instagram__item:focus-visible img {
+      transform: scale(1.08);
+    }
+
+    .instagram__item:hover .instagram__overlay,
+    .instagram__item:focus-visible .instagram__overlay {
+      opacity: 1;
+    }
+
+    .instagram__cta {
+      text-align: center;
+    }
+
+    /* ---------- CTA Final ---------- */
+    .cta-final {
+      padding: 120px 0;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 120%, rgba(0, 180, 255, 0.28) 0%, rgba(0, 180, 255, 0) 60%),
+        radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 55%),
+        var(--bg-primary);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-final__content {
+      max-width: 700px;
+    }
+
+    .cta-final__title {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .cta-final__text {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 36px;
+    }
+
+    /* ---------- Footer ---------- */
+    .footer {
+      background: #080808;
+      border-top: 1px solid var(--border);
+      padding-top: 60px;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.2fr;
+      gap: 40px;
+      padding-bottom: 48px;
+    }
+
+    .footer__brand-name {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .footer__brand-name strong {
+      font-weight: 800;
+    }
+
+    .footer__location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .footer__heading {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .footer__contact a {
+      display: block;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      transition: color var(--transition);
+    }
+
+    .footer__contact a:hover {
+      color: var(--accent);
+    }
+
+    .footer__service p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .footer__bottom {
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer__bottom p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ---------- WhatsApp Float ---------- */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      z-index: 99;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .nav__link {
+        display: none;
+      }
+
+      .about__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .about__image-wrap {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .about__content {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .about__cards {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .services__grid,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .results__grid,
+      .testimonials__grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .instagram__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 899px) {
+      .hero {
+        align-items: flex-end;
+        padding-top: calc(var(--header-h) + 40px);
+      }
+
+      .hero__media {
+        width: 100%;
+      }
+
+      .hero__media::after {
+        background: linear-gradient(0deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0.88) 40%, rgba(10, 10, 10, 0.35) 75%, rgba(10, 10, 10, 0.2) 100%);
+      }
+
+      .hero__img {
+        object-position: 50% 15%;
+      }
+
+      .hero__video::after {
+        background: linear-gradient(0deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0.88) 40%, rgba(10, 10, 10, 0.45) 75%, rgba(10, 10, 10, 0.3) 100%);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 0 18px;
+      }
+
+      .hero {
+        padding-bottom: 56px;
+      }
+
+      .hero__title {
+        font-size: 1.85rem;
+      }
+
+      .about,
+      .services,
+      .how-it-works,
+      .results,
+      .testimonials,
+      .faq,
+      .instagram {
+        padding: 70px 0;
+      }
+
+      .about__cards,
+      .services__grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .instagram__grid {
+        gap: 10px;
+      }
+
+      .cta-final {
+        padding: 80px 0;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+
+      .footer__location {
+        justify-content: center;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .btn--lg {
+        padding: 16px 24px;
+        font-size: 1rem;
+      }
+
+      .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    /* Respeita quem prefere menos animação */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Ícones reutilizados (SVG sprite) -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </symbol>
+  </svg>
+
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#home" class="logo" aria-label="Vitor L. Personal">
+      <a href="#inicio" class="logo" aria-label="Vitor L. Personal Trainer - início">
         <span class="logo__text">VITOR L. <strong>PERSONAL</strong></span>
       </a>
-      <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener noreferrer" class="header__instagram" aria-label="Instagram">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#servicos" class="nav__link">SERVIÇOS</a>
+        <a href="#resultados" class="nav__link">RESULTADOS</a>
+        <a href="#duvidas" class="nav__link">DÚVIDAS</a>
+        <a href="#contato" class="nav__link">CONTATO</a>
+        <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener" class="header__instagram" aria-label="Instagram do Vitor L. Personal">
+          <svg width="22" height="22" aria-hidden="true"><use href="#i-instagram"></use></svg>
+        </a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <!-- Hero -->
-    <section id="home" class="hero">
-      <div class="hero__video-wrapper">
-  <iframe 
-    src="https://player.vimeo.com/video/1226391707?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
-    frameborder="0" 
-    allow="autoplay; fullscreen"
-    allowfullscreen
-  ></iframe>
-</div>
-      <div class="hero__overlay"></div>
+    <!-- Vídeo de fundo do Vimeo: carregado por js/main.js na primeira interação do visitante -->
+    <section id="inicio" class="hero" data-vimeo="1226391707">
+      <div class="hero__video" aria-hidden="true"></div>
+      <div class="hero__media">
+        <img class="hero__img"
+             src="img/hero-personal-trainer-brasilia-720.webp"
+             srcset="img/hero-personal-trainer-brasilia-720.webp 720w, img/hero-personal-trainer-brasilia-860.webp 860w, img/hero-personal-trainer-brasilia-1080.webp 1080w"
+             sizes="(min-width: 900px) 55vw, 100vw"
+             width="720" height="900"
+             alt="Vitor L., personal trainer em Brasília, correndo no Estádio Mané Garrincha"
+             fetchpriority="high" decoding="async">
+      </div>
       <div class="container hero__content">
-        <div class="hero__badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          BRASÍLIA - DF
+        <div class="hero__text">
+          <h1 class="hero__badge">
+            <svg width="14" height="14" aria-hidden="true"><use href="#i-pin"></use></svg>
+            Personal Trainer em Brasília - DF
+          </h1>
+          <p class="hero__title">
+            TRANSFORME SEU CORPO.<br>
+            <span class="text-accent">EVOLUA SUA PERFORMANCE.</span><br>
+            ALCANCE RESULTADOS REAIS.
+          </p>
+          <p class="hero__subtitle">
+            Treinamento personalizado presencial em Brasília e consultoria online, com acompanhamento profissional para emagrecimento, ganho de massa muscular e condicionamento físico.
+          </p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary">
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-phone"></use></svg>
+              AGENDAR AULA
+            </a>
+            <a href="#servicos" class="btn btn--outline">VER SERVIÇOS</a>
+          </div>
         </div>
-        <h1 class="hero__title">
-          TRANSFORME SEU CORPO.<br>
-          <span class="text-accent">EVOLUA SUA PERFORMANCE.</span><br>
-          ALCANCE RESULTADOS REAIS.
-          <span class="sr-only"> - Personal Trainer em Brasília | Vitor L.</span>
-        </h1>
-        <p class="hero__subtitle">
-          Treinamento personalizado em Brasília com acompanhamento profissional para quem busca emagrecimento, ganho de massa muscular e uma vida mais saudável.
-        </p>
-        <a href="#contato" class="btn btn--primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          AGENDAR AULA
-        </a>
       </div>
     </section>
 
     <!-- Sobre / Método -->
-    <section id="sobre" class="about">
+    <section id="sobre" class="about" aria-labelledby="sobre-titulo">
       <div class="container about__grid">
         <div class="about__image-wrap">
-          <img src="image/perfil.jpg" alt="Foto de perfil de Vitor L., personal trainer em Brasília especialista em musculação e consultoria fitness" class="about__image" width="600" height="750" loading="lazy" decoding="async">
+          <img src="img/vitor-personal-trainer-brasilia-480.webp"
+               srcset="img/vitor-personal-trainer-brasilia-480.webp 480w, img/vitor-personal-trainer-brasilia-640.webp 640w, img/vitor-personal-trainer-brasilia-800.webp 800w"
+               sizes="(min-width: 1025px) 480px, (min-width: 480px) 420px, 100vw"
+               alt="Vitor L., personal trainer em Brasília especialista em musculação, emagrecimento e hipertrofia"
+               class="about__image" width="480" height="600" loading="lazy" decoding="async">
         </div>
         <div class="about__content">
-          <h2 class="section-title">
+          <h2 id="sobre-titulo" class="section-title">
             MAIS QUE TREINO. UM MÉTODO <span class="text-accent">CRIADO PARA VOCÊ.</span>
           </h2>
           <p class="about__text">
-            Cada pessoa possui objetivos, limitações e desafios diferentes. O treinamento personalizado une estratégia, acompanhamento e disciplina para entregar evolução constante.
+            Cada pessoa tem objetivos, limitações e desafios diferentes. Como personal trainer em Brasília, uno estratégia, acompanhamento e disciplina para entregar evolução constante, seja para emagrecer, ganhar massa muscular ou melhorar o condicionamento físico.
+          </p>
+          <p class="about__text">
+            Atendo alunos presencialmente no Distrito Federal e, para quem mora em outra cidade ou tem rotina corrida, ofereço consultoria online com o mesmo método.
           </p>
           <div class="about__cards">
             <article class="info-card">
@@ -172,109 +1393,120 @@
               <p>Avaliação, periodização e ajustes contínuos de carga.</p>
             </article>
           </div>
-          <a href="#contato" class="btn btn--outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            FALAR COM O VITOR
-          </a>
+          <a href="#contato" class="btn btn--outline">FALAR COM O VITOR</a>
         </div>
       </div>
     </section>
 
     <!-- Serviços -->
-    <section id="servicos" class="services">
+    <section id="servicos" class="services" aria-labelledby="servicos-titulo">
       <div class="container">
-        <h2 class="section-title section-title--center">SERVIÇOS</h2>
-        <p class="section-subtitle">Programas construídos a partir do seu objetivo, rotina e histórico.</p>
+        <h2 id="servicos-titulo" class="section-title section-title--center">SERVIÇOS DE PERSONAL TRAINER</h2>
+        <p class="section-subtitle">Programas construídos a partir do seu objetivo, rotina e histórico, presencialmente em Brasília ou online.</p>
         <div class="services__grid">
           <article class="service-card">
             <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <h3>TREINAMENTO PERSONALIZADO</h3>
-            <p>Planos individuais focados no objetivo de cada aluno.</p>
+            <h3>PERSONAL TRAINER PRESENCIAL</h3>
+            <p>Treino individual em Brasília, com correção de execução em cada série e plano focado no seu objetivo.</p>
           </article>
           <article class="service-card">
             <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3>CONSULTORIA ONLINE</h3>
+            <p>Treino personalizado e acompanhamento a distância para quem quer evoluir de qualquer cidade.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
             <h3>EMAGRECIMENTO</h3>
-            <p>Treinos estratégicos para redução de gordura e melhoria da qualidade de vida.</p>
+            <p>Treinos estratégicos para redução de gordura, perda de peso e melhoria da qualidade de vida.</p>
           </article>
           <article class="service-card">
             <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
             </div>
             <h3>HIPERTROFIA</h3>
-            <p>Programa para ganho de massa muscular e evolução estética.</p>
+            <p>Programa para ganho de massa muscular, força e evolução estética.</p>
           </article>
           <article class="service-card">
             <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </div>
             <h3>CONDICIONAMENTO FÍSICO</h3>
-            <p>Melhora de resistência, força e performance.</p>
+            <p>Melhora de resistência, força e performance para o dia a dia e para o esporte.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+            </div>
+            <h3>TREINO PARA INICIANTES</h3>
+            <p>Começo seguro e progressivo para quem nunca treinou ou está voltando à academia.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Como Funciona -->
-    <section id="como-funciona" class="how-it-works">
+    <section id="como-funciona" class="how-it-works" aria-labelledby="como-titulo">
       <div class="container">
-        <h2 class="section-title section-title--center">COMO FUNCIONA</h2>
-        <div class="steps">
-          <article class="step">
-            <div class="step__number">01</div>
+        <h2 id="como-titulo" class="section-title section-title--center">COMO FUNCIONA</h2>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__number" aria-hidden="true">01</div>
             <div class="step__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
             <h3>AVALIAÇÃO INICIAL</h3>
             <p>Entendimento do objetivo, histórico e necessidades.</p>
-          </article>
-          <article class="step">
-            <div class="step__number">02</div>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">02</div>
             <div class="step__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <h3>PLANEJAMENTO PERSONALIZADO</h3>
-            <p>Montagem do treino ideal.</p>
-          </article>
-          <article class="step">
-            <div class="step__number">03</div>
+            <p>Montagem do treino ideal para a sua rotina.</p>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">03</div>
             <div class="step__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
             <h3>ACOMPANHAMENTO PROFISSIONAL</h3>
-            <p>Correção dos exercícios e evolução.</p>
-          </article>
-          <article class="step">
-            <div class="step__number">04</div>
+            <p>Correção dos exercícios e ajustes de carga.</p>
+          </li>
+          <li class="step">
+            <div class="step__number" aria-hidden="true">04</div>
             <div class="step__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
             </div>
             <h3>RESULTADOS REAIS</h3>
-            <p>Acompanhamento da evolução.</p>
-          </article>
-        </div>
+            <p>Acompanhamento e registro da sua evolução.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- Resultados / Transformações -->
-    <section id="resultados" class="results">
+    <section id="resultados" class="results" aria-labelledby="resultados-titulo">
       <div class="container">
-        <h2 class="section-title section-title--center">RESULTADOS / TRANSFORMAÇÕES</h2>
-        <p class="section-subtitle">Resultados construídos com planejamento, disciplina e acompanhamento.</p>
+        <h2 id="resultados-titulo" class="section-title section-title--center">RESULTADOS / TRANSFORMAÇÕES</h2>
+        <p class="section-subtitle">Resultados de alunos construídos com planejamento, disciplina e acompanhamento.</p>
         <div class="results__grid">
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/1- Antes.jpeg" alt="Foto de antes do aluno no programa de hipertrofia muscular" loading="lazy" decoding="async">
+                <img src="img/resultado-1-antes-240.webp" srcset="img/resultado-1-antes-240.webp 240w, img/resultado-1-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno antes do programa de hipertrofia com personal trainer em Brasília" width="480" height="854" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/1- depois.jpeg" alt="Foto de depois do aluno com ganho de massa magra após 6 meses de treino" loading="lazy" decoding="async">
+                <img src="img/resultado-1-depois-240.webp" srcset="img/resultado-1-depois-240.webp 240w, img/resultado-1-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno depois de 6 meses de treino de hipertrofia, com ganho de massa muscular" width="480" height="640" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Hipertrofia · 6 meses</p>
@@ -282,13 +1514,13 @@
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/2- antes.jpeg" alt="Foto de antes da aluna antes de iniciar o treino focado em emagrecimento" loading="lazy" decoding="async">
+                <img src="img/resultado-2-antes-240.webp" srcset="img/resultado-2-antes-240.webp 240w, img/resultado-2-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluna antes do treino para emagrecimento" width="480" height="840" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/2- depois.jpg" alt="Foto de depois da aluna com redução de medidas e perda de peso após 4 meses" loading="lazy" decoding="async">
+                <img src="img/resultado-2-depois-240.webp" srcset="img/resultado-2-depois-240.webp 240w, img/resultado-2-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluna depois de 4 meses de treino para emagrecimento, com redução de medidas" width="480" height="854" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Emagrecimento · 4 meses</p>
@@ -296,13 +1528,13 @@
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/3- antes.jpeg" alt="Foto de antes do aluno no programa de condicionamento e reeducação física" loading="lazy" decoding="async">
+                <img src="img/resultado-3-antes-240.webp" srcset="img/resultado-3-antes-240.webp 240w, img/resultado-3-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno antes do programa de condicionamento físico" width="480" height="640" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/3- depois.jpg" alt="Foto de depois do aluno com melhora na postura e condicionamento físico após 3 meses" loading="lazy" decoding="async">
+                <img src="img/resultado-3-depois-240.webp" srcset="img/resultado-3-depois-240.webp 240w, img/resultado-3-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno depois de 3 meses de condicionamento físico, com melhora de postura" width="480" height="854" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Condicionamento · 3 meses</p>
@@ -310,13 +1542,13 @@
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/4- antes.jpg" alt="Foto de antes da aluna antes do treinamento de força e definição corporal" loading="lazy" decoding="async">
+                <img src="img/resultado-4-antes-240.webp" srcset="img/resultado-4-antes-240.webp 240w, img/resultado-4-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluna antes do programa de condicionamento físico" width="480" height="838" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/4-depois.jpg" alt="Foto de depois da aluna com tonificação muscular e definição corporal após 3 meses" loading="lazy" decoding="async">
+                <img src="img/resultado-4-depois-240.webp" srcset="img/resultado-4-depois-240.webp 240w, img/resultado-4-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluna depois de 3 meses de condicionamento físico, com mais definição muscular" width="480" height="854" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Condicionamento · 3 meses</p>
@@ -324,13 +1556,13 @@
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/5- antes.jpg" alt="Foto de antes do aluno no início do acompanhamento personalizado" loading="lazy" decoding="async">
+                <img src="img/resultado-5-antes-240.webp" srcset="img/resultado-5-antes-240.webp 240w, img/resultado-5-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno antes do programa de condicionamento físico" width="480" height="854" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/5- depos.jpg" alt="Foto de depois do aluno com evolução estética e redução de gordura após 3 meses" loading="lazy" decoding="async">
+                <img src="img/resultado-5-depois-240.webp" srcset="img/resultado-5-depois-240.webp 240w, img/resultado-5-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno depois de 3 meses de condicionamento físico, com redução de gordura" width="480" height="854" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Condicionamento · 3 meses</p>
@@ -338,13 +1570,13 @@
 
           <article class="result-card">
             <div class="result-card__images">
-              <div class="result-card__before">
+              <div class="result-card__photo">
                 <span class="label">ANTES</span>
-                <img src="image/6- antes.jpg" alt="Foto de antes do aluno antes de iniciar os treinos individuais" loading="lazy" decoding="async">
+                <img src="img/resultado-6-antes-240.webp" srcset="img/resultado-6-antes-240.webp 240w, img/resultado-6-antes.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno antes do programa de condicionamento físico" width="480" height="854" loading="lazy" decoding="async">
               </div>
-              <div class="result-card__after">
+              <div class="result-card__photo">
                 <span class="label label--after">DEPOIS</span>
-                <img src="image/6- depois.jpg" alt="Foto de depois do aluno com ganho de massa magra e definição após 3 meses" loading="lazy" decoding="async">
+                <img src="img/resultado-6-depois-240.webp" srcset="img/resultado-6-depois-240.webp 240w, img/resultado-6-depois.webp 480w" sizes="(min-width: 1025px) 170px, (min-width: 520px) 237px, 46vw" alt="Aluno depois de 3 meses de condicionamento físico, com ganho de massa magra" width="480" height="854" loading="lazy" decoding="async">
               </div>
             </div>
             <p class="result-card__caption">Condicionamento · 3 meses</p>
@@ -355,84 +1587,104 @@
     </section>
 
     <!-- Depoimentos -->
-    <section id="depoimentos" class="testimonials">
+    <section id="depoimentos" class="testimonials" aria-labelledby="depoimentos-titulo">
       <div class="container">
-        <h2 class="section-title section-title--center">DEPOIMENTOS</h2>
+        <h2 id="depoimentos-titulo" class="section-title section-title--center">DEPOIMENTOS DE ALUNOS</h2>
         <div class="testimonials__grid">
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 estrelas">
-              ★★★★★
-            </div>
+          <figure class="testimonial-card">
+            <div class="testimonial-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
             <blockquote>
               “Depois que comecei o acompanhamento do Vitor, consegui resultados que nunca tinha conseguido sozinho.”
             </blockquote>
-            <footer>
+            <figcaption class="testimonial-card__author">
               <strong>Rafael M.</strong>
               <span>-12 kg em 6 meses</span>
-            </footer>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 estrelas">
-              ★★★★★
-            </div>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="testimonial-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
             <blockquote>
               “O treino é ajustado para a minha rotina. Nunca tive tanta constância e disposição no dia a dia.”
             </blockquote>
-            <footer>
+            <figcaption class="testimonial-card__author">
               <strong>Juliana S.</strong>
               <span>Ganho de massa e postura</span>
-            </footer>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 estrelas">
-              ★★★★★
-            </div>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="testimonial-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
             <blockquote>
               “Método claro, correção de execução em cada série e evolução acompanhada de perto. Vale cada treino.”
             </blockquote>
-            <footer>
+            <figcaption class="testimonial-card__author">
               <strong>Bruno C.</strong>
               <span>+8 kg de massa magra</span>
-            </footer>
-          </article>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- Instagram Feed -->
-    <section id="instagram" class="instagram">
+    <!-- Perguntas frequentes (o mesmo conteúdo está no JSON-LD FAQPage do <head>) -->
+    <section id="duvidas" class="faq" aria-labelledby="duvidas-titulo">
       <div class="container">
-        <h2 class="section-title section-title--center">ACOMPANHE MINHA ROTINA E DICAS DE TREINO</h2>
+        <h2 id="duvidas-titulo" class="section-title section-title--center">PERGUNTAS FREQUENTES</h2>
+        <p class="section-subtitle">Tudo o que você precisa saber antes de começar com um personal trainer em Brasília.</p>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Quanto custa um personal trainer em Brasília?</summary>
+            <p>O investimento varia conforme a frequência semanal de treinos, o local e a modalidade (presencial ou consultoria online). Chame no WhatsApp para receber os valores atualizados e escolher o plano que cabe na sua rotina.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O atendimento é presencial ou online?</summary>
+            <p>Os dois. O treinamento presencial é feito em Brasília (DF) e a consultoria online atende alunos de qualquer cidade, com treino personalizado e acompanhamento a distância.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Personal trainer ajuda a emagrecer?</summary>
+            <p>Sim. O treino é planejado para aumentar o gasto calórico, preservar a massa muscular e manter a constância, fatores decisivos para emagrecer com saúde. O resultado também depende de alimentação, sono e regularidade.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Nunca treinei. Posso começar com personal trainer?</summary>
+            <p>Pode, e é a forma mais segura de começar. A avaliação inicial identifica seu nível, suas limitações e seu objetivo, e o treino evolui de forma progressiva, com correção de execução em cada exercício.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Em quanto tempo aparecem os resultados?</summary>
+            <p>Depende do objetivo, do ponto de partida e da frequência de treinos. Os alunos mostrados nas transformações tiveram evolução visível entre 3 e 6 meses de acompanhamento.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como agendar a primeira aula?</summary>
+            <p>Clique em “Agendar aula” ou no botão do WhatsApp, conte seu objetivo e sua disponibilidade de horários. Em seguida, marcamos a avaliação inicial.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram" class="instagram" aria-labelledby="instagram-titulo">
+      <div class="container">
+        <h2 id="instagram-titulo" class="section-title section-title--center">ACOMPANHE MINHA ROTINA E DICAS DE TREINO</h2>
         <p class="instagram__handle">@vitor.lpersonal</p>
         <div class="instagram__grid">
-          <a href="https://www.instagram.com/p/DagTkGTCWS3/?img_index=1" target="_blank" rel="noopener noreferrer" class="instagram__item" aria-label="Ver publicação sobre treino de corrida no Instagram">
-            <img src="image/Vitor correndo.png" alt="Personal Trainer Vitor L. realizando treino aeróbico de corrida ao ar livre em Brasília" loading="lazy" decoding="async">
-            <span class="instagram__overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </span>
+          <a href="https://www.instagram.com/p/DagTkGTCWS3/" target="_blank" rel="noopener" class="instagram__item" aria-label="Ver publicação sobre treino de corrida no Instagram">
+            <img src="img/instagram-corrida.webp" alt="Vitor L. fazendo treino de corrida no estádio em Brasília" width="540" height="540" loading="lazy" decoding="async">
+            <span class="instagram__overlay"><svg width="28" height="28" aria-hidden="true"><use href="#i-instagram"></use></svg></span>
           </a>
-          <a href="https://www.instagram.com/p/DAJHEbyJE4Z/" target="_blank" rel="noopener noreferrer" class="instagram__item" aria-label="Ver publicação sobre consultoria e acompanhamento no Instagram">
-            <img src="image/vitor personal trainer.png" alt="Vitor L. orientando aluna na postura correta durante exercício de musculação na academia" loading="lazy" decoding="async">
-            <span class="instagram__overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </span>
+          <a href="https://www.instagram.com/p/DAJHEbyJE4Z/" target="_blank" rel="noopener" class="instagram__item" aria-label="Ver publicação sobre acompanhamento personalizado no Instagram">
+            <img src="img/instagram-acompanhamento.webp" alt="Vitor L. com camiseta de personal trainer na academia" width="540" height="540" loading="lazy" decoding="async">
+            <span class="instagram__overlay"><svg width="28" height="28" aria-hidden="true"><use href="#i-instagram"></use></svg></span>
           </a>
-          <a href="https://www.instagram.com/p/Dc7Nb_HulWb/" target="_blank" rel="noopener noreferrer" class="instagram__item" aria-label="Ver publicação sobre treino funcional no Instagram">
-            <img src="image/Vitor treino.png" alt="Personal Trainer Vitor L. executando movimento de mobilidade e treino funcional" loading="lazy" decoding="async">
-            <span class="instagram__overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </span>
+          <a href="https://www.instagram.com/p/Dc7Nb_HulWb/" target="_blank" rel="noopener" class="instagram__item" aria-label="Ver publicação sobre treino funcional no Instagram">
+            <img src="img/instagram-treino-funcional.webp" alt="Vitor L. em treino funcional com outro atleta" width="247" height="247" loading="lazy" decoding="async">
+            <span class="instagram__overlay"><svg width="28" height="28" aria-hidden="true"><use href="#i-instagram"></use></svg></span>
           </a>
-          <a href="https://www.instagram.com/p/DdKU7dah4hv/" target="_blank" rel="noopener noreferrer" class="instagram__item" aria-label="Ver publicação sobre rotina de treinos no Instagram">
-            <img src="image/vitor treino 2.png" alt="Vitor L. Personal Trainer acompanhando execução de exercício de força em Brasília" loading="lazy" decoding="async">
-            <span class="instagram__overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </span>
+          <a href="https://www.instagram.com/p/DdKU7dah4hv/" target="_blank" rel="noopener" class="instagram__item" aria-label="Ver publicação sobre treino de força no Instagram">
+            <img src="img/instagram-treino-forca.webp" alt="Vitor L. empurrando trenó em treino de força" width="248" height="248" loading="lazy" decoding="async">
+            <span class="instagram__overlay"><svg width="28" height="28" aria-hidden="true"><use href="#i-instagram"></use></svg></span>
           </a>
         </div>
         <div class="instagram__cta">
-          <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener" class="btn btn--outline">
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-instagram"></use></svg>
             SEGUIR NO INSTAGRAM
           </a>
         </div>
@@ -440,14 +1692,14 @@
     </section>
 
     <!-- CTA Final -->
-    <section id="contato" class="cta-final">
+    <section id="contato" class="cta-final" aria-labelledby="contato-titulo">
       <div class="container cta-final__content">
-        <h2 class="cta-final__title">
+        <h2 id="contato-titulo" class="cta-final__title">
           SEU PRÓXIMO NÍVEL <span class="text-accent">COMEÇA AGORA.</span>
         </h2>
-        <p class="cta-final__text">Não espere o momento perfeito. Comece hoje sua transformação.</p>
-        <a href="https://wa.me/5561985511063?text=Ol%C3%A1%20Vitor%2C%20quero%20saber%20mais%20sobre%20o%20treinamento%20personalizado." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <p class="cta-final__text">Não espere o momento perfeito. Agende sua avaliação com personal trainer em Brasília e comece hoje sua transformação.</p>
+        <a href="https://wa.me/5561985511063?text=Ol%C3%A1%20Vitor%2C%20quero%20saber%20mais%20sobre%20o%20treinamento%20personalizado." target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+          <svg width="20" height="20" aria-hidden="true"><use href="#i-phone"></use></svg>
           QUERO COMEÇAR MEU TREINAMENTO
         </a>
       </div>
@@ -457,38 +1709,39 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__grid">
-      <h2 class="sr-only">Informações de Contato e Atendimento</h2>
       <div class="footer__brand">
-        <h3>VITOR L. <span>PERSONAL TRAINER</span></h3>
+        <p class="footer__brand-name">VITOR L. <strong>PERSONAL TRAINER</strong></p>
         <p class="footer__location">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <svg width="14" height="14" aria-hidden="true"><use href="#i-pin"></use></svg>
           Brasília - DF
         </p>
       </div>
       <div class="footer__contact">
-        <h3>CONTATO</h3>
+        <h2 class="footer__heading">CONTATO</h2>
         <a href="tel:+5561985511063">+55 61 98551-1063</a>
-        <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener noreferrer">@vitor.lpersonal</a>
+        <a href="https://wa.me/5561985511063" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/vitor.lpersonal" target="_blank" rel="noopener">@vitor.lpersonal</a>
       </div>
       <div class="footer__service">
-        <h3>ATENDIMENTO</h3>
+        <h2 class="footer__heading">ATENDIMENTO</h2>
         <p>Treinamento personalizado presencial em Brasília e consultoria online.</p>
+        <p>Seg a sex: 6h às 21h · Sáb: 7h às 13h</p>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>© 2026 Vitor L. Personal Trainer · Brasília - DF</p>
+        <p>© 2026 Vitor L. Personal Trainer · Personal trainer em Brasília - DF</p>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/5561985511063?text=Ol%C3%A1%20Vitor%2C%20quero%20saber%20mais%20sobre%20o%20treinamento%20personalizado." 
-     class="whatsapp-float" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     aria-label="Falar no WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+  <a href="https://wa.me/5561985511063?text=Ol%C3%A1%20Vitor%2C%20quero%20saber%20mais%20sobre%20o%20treinamento%20personalizado."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Falar com o Vitor no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
   </a>
